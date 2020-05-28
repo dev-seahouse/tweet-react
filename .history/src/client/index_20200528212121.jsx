@@ -3,22 +3,14 @@ import ReactDOM from 'react-dom';
 import tweets from 'tweets'
 import Tweet from './tweet'
 
-const TweetList = () => {
-  if (tweets) {
-    return (
-      tweets.tweets.map(tweet => (
-        <Tweet key={tweet.id} tweet={tweet}/>
-      ))
-    )
-  }
-}
-
 class App extends React.Component {
+
+  const tweets = 
 
   render() {
     return (
       <div>
-        <TweetList />
+        <Tweet tweets={tweets} />
       </div>
     );
   }

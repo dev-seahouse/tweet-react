@@ -5,9 +5,10 @@ import Tweet from './tweet'
 
 const TweetList = () => {
   if (tweets) {
+  console.log(Array.isArray(tweets))
     return (
-      tweets.tweets.map(tweet => (
-        <Tweet key={tweet.id} tweet={tweet}/>
+      tweets.map(tweet => (
+        <Tweet key={tweet.id} tweet={tweet} />
       ))
     )
   }

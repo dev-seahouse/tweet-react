@@ -7,7 +7,9 @@ const TweetList = () => {
   if (tweets) {
     return (
       tweets.tweets.map(tweet => (
-        <Tweet key={tweet.id} tweet={tweet}/>
+        <Tweet key={tweet.id} tweet={tweet}>
+          
+        </Tweet>
       ))
     )
   }

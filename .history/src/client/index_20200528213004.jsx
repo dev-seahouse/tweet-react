@@ -4,10 +4,11 @@ import tweets from 'tweets'
 import Tweet from './tweet'
 
 const TweetList = () => {
+  console.log(tweets)
   if (tweets) {
     return (
-      tweets.tweets.map(tweet => (
-        <Tweet key={tweet.id} tweet={tweet}/>
+      tweets.map(tweet => (
+        <Tweet key={tweet.id} tweet={tweet}/ >
       ))
     )
   }
